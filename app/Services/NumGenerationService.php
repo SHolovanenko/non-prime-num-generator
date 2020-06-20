@@ -9,10 +9,18 @@ class NumGenerationService extends BaseService
 {
     const LIMIT_GENERATION = 1000000;
 
+    /**
+     * Get generated number
+     * @return NumberResource
+     */
     public function getNumber(Number $number) {
         return new NumberResource($number);
     }
 
+    /**
+     * Genereate non prime number
+     * @return NumberResource
+     */
     public function generateNonPrimeNumber() {
         $number = new Number();
         $generation = null;
