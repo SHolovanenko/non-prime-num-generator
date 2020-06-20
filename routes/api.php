@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('api')->get('/retrieve/{id}', 'NumGenerationController@retrieve');
+Route::middleware('api')->get('/retrieve/{number}', 'NumGenerationController@retrieve');
 Route::middleware('api')->post('/generate', 'NumGenerationController@generate');

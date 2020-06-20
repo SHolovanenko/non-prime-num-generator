@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\RetrieveNumberRequest;
+use App\Models\Number;
 use App\Services\NumGenerationService;
 use Illuminate\Http\Request;
 
@@ -22,9 +24,9 @@ class NumGenerationController extends Controller
         return $this->numGenerationService;
     }
 
-    public function retrieve($id) 
+    public function retrieve(Number $number) 
     {
-        $result = $this->NumGenerationService()->getNumberById($id);
+        $result = $this->NumGenerationService()->getNumber($number);
         return $result;
     }
 
