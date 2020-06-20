@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "abdf15c9-7b31-47c0-951c-77a4e0270512",
+		"name": "non-prime-number-generator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/retrieve/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://test-non-prime-number.loc/api/retrieve/3",
+					"protocol": "http",
+					"host": [
+						"test-non-prime-number",
+						"loc"
+					],
+					"path": [
+						"api",
+						"retrieve",
+						"3"
+					]
+				},
+				"description": "Retrieve number"
+			},
+			"response": [
+				{
+					"name": "/api/retrieve/3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://test-non-prime-number.loc/api/retrieve/3",
+							"protocol": "http",
+							"host": [
+								"test-non-prime-number",
+								"loc"
+							],
+							"path": [
+								"api",
+								"retrieve",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 20 Jun 2020 17:56:12 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.3"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "33"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 3,\n        \"number\": 685354\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "/api/generate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://test-non-prime-number.loc/api/generate",
+					"protocol": "http",
+					"host": [
+						"test-non-prime-number",
+						"loc"
+					],
+					"path": [
+						"api",
+						"generate"
+					]
+				},
+				"description": "Generate non prime number"
+			},
+			"response": [
+				{
+					"name": "/api/generate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://test-non-prime-number.loc/api/generate",
+							"protocol": "http",
+							"host": [
+								"test-non-prime-number",
+								"loc"
+							],
+							"path": [
+								"api",
+								"generate"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 20 Jun 2020 17:57:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.3"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "33"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 9,\n        \"number\": 925244\n    }\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
